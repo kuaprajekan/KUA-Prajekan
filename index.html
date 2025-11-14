@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUA Prajekan</title>
+  <style>
+    .judul h1,
+    .judul p {
+      font-weight: bold;
+
+      background: linear-gradient(
+        90deg,
+        #fff7b0,
+        #ffd700,
+        #ffea70,
+        #e5b800,
+        #fff7b0
+      );
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      text-shadow:
+        0 0 4px rgba(255, 215, 0, 0.7),
+        0 0 8px rgba(255, 215, 0, 0.5),
+        0 0 12px rgba(255, 215, 0, 0.3);
+    }
+
+    .judul h1 {
+      font-size: 28px;
+    }
+
+    .judul p {
+      font-size: 18px;
+    }
+    .logo {
+      display: inline-block;
+      padding: 4px;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      box-shadow: 
+        0 0 6px rgba(255, 215, 0, 0.8),
+        0 0 12px rgba(255, 215, 0, 0.6),
+        0 0 18px rgba(255, 215, 0, 0.4);
+    }
+
+    .logo img {
+      display: block;
+      border-radius: 10px;
+    }
+    header {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* jarak logo dan teks */
+  padding: 10px;
+}
+
+.judul h1 {
+  margin: 0;
+  color: white; /* ubah sesuai kebutuhan */
+}
+
+.judul p {
+  margin: 0;
+  font-size: 16px;
+  color: white; /* ubah sesuai kebutuhan */
+}
+    /* ======= STYLE HEADER ======= */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* jarak antara logo & teks */
+  padding: 10px;
+}
+
+/* ======= BINGKAI EMAS GLOW ======= */
+.logo {
+  display: inline-block;
+  padding: 6px;
+  border: 2px solid #FFD700; /* bingkai emas */
+  border-radius: 12px;
+
+  /* glow emas */
+  box-shadow:
+    0 0 6px rgba(255, 215, 0, 0.8),
+    0 0 12px rgba(255, 215, 0, 0.6),
+    0 0 18px rgba(255, 215, 0, 0.4);
+}
+
+.logo img {
+  width: 80px; /* atur sesuai kebutuhan */
+  display: block;
+  border-radius: 10px;
+}
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+  background-color: #0A8547;
+  color: white;
+  padding: 8px 15px;
+}
+
+      header .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin-top: 2px;
+    }
+
+    header p {
+      font-size: 14px;
+      margin-top: 2px;
+      color: #e0e0e0;
+    }
+
+    nav {
+      margin-top: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #0066ff;
+    }
+
+    /* Submenu */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #0050aa;
+      min-width: 180px;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      width: 100%;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+    /* Body container */
+    .container {
+      padding: 20px;
+      background-color: white;
+      margin: 20px auto;
+      max-width: 1200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 8px 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+    <img src="Lambang Kemenag.png" alt="Ikhlas Beramal">
+  </div>
+
+  <div class="judul">
+    <h1>KUA Prajekan</h1>
+    <p>Kementerian Agama Kabupaten Bondowoso</p>
+
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Profil</a>
+          <ul>
+            <li><a href="#">Visi dan Misi</a></li>
+            <li><a href="#">Tugas dan Fungsi</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Kepala KUA Prajekan</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Layanan</a>
+          <ul>
+            <li><a href="#">Simkah</a></li>
+            <li><a href="#">Siwak</a></li>
+            <li><a href="#">Penyuluhan</a></li>
+            <li><a href="#">Bimwin</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Berita</a>
+          <ul>
+    <li><a href="#berita">Berita</a></li>
+    <li><a href="https://kemenag.go.id" target="_blank">Kemenag RI</a></li>
+    <li><a href="https://jatim.kemenag.go.id" target="_blank">Kanwil Kemenag Jatim</a></li>
+    <li><a href="https://kemenag.bondowosokab.go.id" target="_blank">Kemenag Bondowoso</a></li>
+    <li><a href="https://apripusat.or.id/" target="_blank">APRI</a></li>
+    <li><a href="https://pdiparibondowoso.com/" target="_blank">IPARI</a></li>
+  </ul>
+        </li>
+        <li><a href="#">Unit Kerja</a>
+          <ul>
+            <li><a href="#">Desa Prajekan Kidul</a></li>
+            <li><a href="#">Desa Prajekan Lor</a></li>
+            <li><a href="#">Desa Sempol</a></li>
+            <li><a href="#">Desa Bandilan</a></li>
+            <li><a href="#">Desa Tarum</a></li>
+            <li><a href="#">Desa Walidono</a></li>
+            <li><a href="#">Desa Cangkring</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Galeri</a>
+          <ul>
+            <li><a href="#">Foto Peristiwa</a></li>
+            <li><a href="#">Video</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Kolom</a>
+          <ul>
+            <li><a href="#">Opini</a></li>
+            <li><a href="#">Feature</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Selamat Datang di Website KUA Prajekan</h2>
+    <p>Ini adalah tempat untuk menampilkan konten sub-menu, berita, layanan, galeri, dan informasi lainnya.</p>
+  </div>
+
+  <!-- Section Berita -->
+  <section id="berita">
+    <h1 style="font-size: 20px;">Daftar Berita Terbaru</h1>
+
+    <ul>
+      <li>
+        <a href="https://kemenag.go.id" target="_blank">
+          Berita Kemenag RI – Informasi Nasional
+        </a>
+      </li>
+
+      <li>
+        <a href="https://jatim.kemenag.go.id" target="_blank">
+          Berita Kanwil Kemenag Jawa Timur
+        </a>
+      </li>
+
+      <li>
+        <a href="https://kemenag.bondowosokab.go.id/" target="_blank">
+          Berita Kemenag Kabupaten Bondowoso
+        </a>
+      </li>
+
+      <li>
+        <a href="https://apripusat.or.id/" target="_blank">
+          Berita APRI – Asosiasi Penghulu Republik Indonesia
+        </a>
+      </li>
+
+      <li>
+        <a href="https://pdiparibondowoso.com/" target="_blank">
+          Berita IPARI – Ikatan Penyuluh Agama Republik Indonesia
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="#">Tentang</a> | 
+    <a href="#">Bimbingan Masyarakat</a> | 
+    <a href="#">Lainnya</a>
+  </footer>
+
+</body>
+</html>
